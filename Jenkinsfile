@@ -8,9 +8,9 @@ pipeline {
         EMAIL_ID = "arunkumar02136@gmail.com"
     }
     stages {
-        stage('git'){
+        stage('docker build'){
             steps{
-                echo "hello"
+                sh "docker build -t nginx:latest ."
             }
         }    
         stage('get username') {
