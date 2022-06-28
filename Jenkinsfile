@@ -8,6 +8,11 @@ pipeline {
         EMAIL_ID = "arunkumar02136@gmail.com"
     }
     stages {
+        stage('git'){
+            steps{
+                echo "hello"
+            }
+        }    
         stage('get username') {
             steps {
                 echo "i am ${params.USER_NAME}"
