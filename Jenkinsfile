@@ -1,8 +1,8 @@
 pipeline {
     agent any
     parameters{
-        string(name:'USER_NAME', defaultValue:'', description:'enter your username')
-        password(name:'PWD', defaultValue:'', description:'enter your password')
+        string(name: 'USER_NAME', defaultValue: '', description: 'enter your username')
+        password(name: 'PWD', defaultValue: '', description: 'enter your password')
     }
     environment{
         EMAIL_ID = "arunkumar02136@gmail.com"
